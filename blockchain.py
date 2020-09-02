@@ -115,7 +115,7 @@ def mine():
     # rewarding the miner for his contribution. 0 specifies new coin has been mined
 
     blockchain.new_transaction(
-        sender= "0",
+        sender = "0",
         recipient = node_identifier,
         amount = 1,
     )
@@ -164,4 +164,5 @@ def full_chain():
 
 
 if __name__ == '__main__':
-   app.run(host="0.0.0.0", port=5000)
+    app.debug = True
+    app.run(host="0.0.0.0", port=5000)
